@@ -14,7 +14,7 @@ const CartPage =()=>{
             <h2 className="text-2xl font-bold">Your Cart</h2>
             {cartItems.map(item => (
                 <div key={item.id} className="flex items-center gap-4 border-b py-2">
-                    <img src={item.image} className="h-16"/>
+                    <img src={item.image} alt={item.title} className="h-16"/>
                     <div className="flex-1">
                         <p>{item.title}</p>
                         <p>{item.price}</p>
